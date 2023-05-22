@@ -1,0 +1,151 @@
+// section style
+.section {
+  @apply py-28;
+}
+
+// container
+.container {
+  @apply mx-auto max-w-[1140px] px-3 xl:max-w-[1320px];
+}
+
+// form style
+.form-inputs * {
+  @apply mb-5 leading-10;
+}
+
+.form-input,
+.form-textarea {
+  @apply border border-border bg-transparent py-3 px-5 placeholder:text-text/50 focus:border-border focus:bg-[#202e3c] focus:ring-transparent;
+}
+
+// social icon style
+.social-share {
+  @apply space-x-4;
+  li {
+    @apply inline-block;
+    a {
+      @apply block h-9 w-9 rounded-full border bg-primary text-center text-dark;
+      svg {
+        @apply m-auto h-9;
+      }
+    }
+  }
+}
+
+//profile
+.profile-social-icons {
+  li {
+    @apply mx-3;
+  }
+  a {
+    @apply text-2xl text-dark;
+
+    svg {
+      @apply transition
+       duration-200 ease-in-out hover:scale-125;
+    }
+  }
+}
+
+// content style
+.content {
+  @apply prose max-w-none;
+  @apply prose-headings:mt-4 prose-headings:font-normal prose-headings:text-dark;
+  @apply prose-h1:mb-4 prose-h1:text-h1-sm md:prose-h1:text-h1;
+  @apply prose-h2:mb-4 prose-h2:text-h2-sm md:prose-h2:text-h2;
+  @apply prose-h3:mt-4 prose-h3:text-h3-sm md:prose-h3:text-h3;
+  @apply prose-h4:mt-4;
+  @apply prose-h5:mb-4;
+  @apply prose-h6:mb-6;
+  @apply prose-hr:border-[#cbcbcb42]/25;
+  @apply prose-p:text-text;
+  @apply prose-img:rounded-lg;
+  @apply prose-blockquote:rounded prose-blockquote:border-primary prose-blockquote:bg-[rgba(97,238,188,4%)] prose-blockquote:py-8 prose-blockquote:px-8 prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:leading-9 prose-blockquote:text-dark;
+  @apply prose-code:inline-block prose-code:rounded-sm prose-code:px-4 prose-code:pb-4;
+  @apply prose-strong:text-text;
+  @apply prose-a:text-primary;
+  @apply prose-li:text-text prose-li:marker:text-text;
+  @apply prose-table:overflow-hidden prose-table:rounded prose-thead:border-border prose-thead:bg-[#2e3b47] prose-tr:border-none prose-th:p-3 prose-th:text-base prose-th:text-dark prose-td:p-3 prose-td:text-base prose-td:text-text;
+
+  blockquote p {
+    @apply my-0 text-[21px] leading-9 text-dark;
+  }
+
+  tbody {
+    @apply bg-[#242e38];
+  }
+}
+
+//card
+.card {
+  @apply rounded border border-border p-6 lg:p-9;
+}
+
+//tab
+.tab-item {
+  h5 {
+    @apply mt-0;
+  }
+
+  p {
+    @apply mb-0;
+  }
+}
+
+.tab-link.active {
+  @apply bg-[#242e38];
+}
+
+//gallery
+.gallery {
+  &-item {
+    margin-top: 30px;
+  }
+  &-img {
+    @apply h-full object-cover;
+  }
+
+  .ReactGridGallery_tile {
+    @apply m-2.5 flex-grow bg-transparent #{!important};
+
+    &:hover {
+      @apply cursor-zoom-in;
+
+      img {
+        @apply scale-105;
+      }
+    }
+  }
+
+  .ReactGridGallery_tile-viewport {
+    img {
+      @apply w-full rounded-none object-cover transition-all duration-300;
+      @apply cursor-zoom-in #{!important};
+    }
+  }
+}
+
+//notice
+.notice {
+  @apply border-t-[30px] text-dark;
+
+  &.note {
+    @apply border-[#97d6ff] bg-[rgba(151,214,255,.15)];
+  }
+
+  p {
+    @apply my-0;
+  }
+
+  &.tip {
+    @apply border-[#96ff96] bg-[rgba(150,255,150,.15)];
+  }
+
+  &.info {
+    @apply border-[#ffc392cc] bg-[rgba(255,195,146,.15)];
+  }
+
+  &.warning {
+    @apply border-[#ff918ccc] bg-[rgba(255,145,140,.15)];
+  }
+}

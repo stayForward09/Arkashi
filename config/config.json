@@ -1,0 +1,37 @@
+{
+  "site": {
+    "title": "Hydrogen Nextjs",
+    "base_url": "/",
+    "favicon": "/images/developer.png"
+  },
+
+  "settings": {
+    "pagination": 6,
+    "summary_length": 200,
+    "blog_folder": "posts"
+  },
+
+  "profile": {
+    "name": "Michael Caine",
+    "image": "/images/developer.png",
+    "designation": "Front-end developer",
+    "bio": "A Full Stack Front-end Developer based in New York. Meticulous web developer with over 2 years of front end experience and passion for responsive and mobile-first website design."
+  },
+
+  "params": {
+    "contact_form_action": "#",
+    "tag_manager_id": "",
+    "copyright": "Copyright © 2022 a theme by [statichunt](https://statichunt.com)"
+  },
+
+  "metadata": {
+    "meta_author": "Statichunt",
+    "meta_image": "",
+    "meta_description": ""
+  },
+
+  "disqus": {
+    "enable": true,
+    "shortname": "themefisher-template"
+  }
+}
